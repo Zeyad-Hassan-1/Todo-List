@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+    <link rel="stylesheet" href="./index.11ca3fc9.css">
+    <style>@import "https://fonts.googleapis.com/css2?family=Island+Moments&display=swap";</style>
+    <style>@import "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap";</style>
+    <style>@import "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap";</style>
+    <link rel="stylesheet" href="./index.b12aeef7.css">
+    <link rel="stylesheet" href="./index.1885e42e.css">
+    <link rel="stylesheet" href="./index.421f4aff.css">
+</head>
+<body>
+<button class="nightMode"><i class="fa-moon fa-solid"></i></button>
+<header>
+    <nav>
+        <div>
+            <div>V</div>
+            <p>Vista Lab</p></div>
+        <img src="./profilepic.df0070d1.png" alt="profile-img"></nav>
+</header>
+<h1> Hello, Zeyad , <span> Start planning today </span></h1>
+<section>
+    <aside><h3 class="currentDay"></h3> <input type="text" id="datepicker" placeholder="Select Date">
+        <div class="motivation"><img alt id="unsplashImage"> <q class="quotes"></q></div>
+    </aside>
+    <div>
+        <form method="get" class="taskForm"><input type="text" name="Title" id="title"
+                                                   placeholder=" type Title of task"> <input type="text" name="details"
+                                                                                             id="details"
+                                                                                             placeholder="Detail of your task">
+            <input type="submit" value="+" class="addTask"></form>
+        <div class="projects"><a href="./src/Projects.html" target="_blank">
+            <button class="projectsPage">Browse projects</button>
+        </a>
+            <button class="deleteAll">Delete All</button>
+        </div>
+        <div class="tasksContainer"></div>
+        <button class="loadMoreTasks">Load more</button>
+        <div class="tasksCreated"><h3>Tasks created</h3>
+            <h2 class="tasksNumber"></h2></div>
+    </div>
+</section>
+<footer>
+    <div>
+        <div>V</div>
+        <p>Vista Lab</p></div>
+    <div class="copyright"> &copy; 2024 Zeyad Hasan. All Rights Reserved.</div>
+    <div class="socialIcons">
+        <button><i class="fa-brands fa-facebook-f"></i></button>
+        <button><i class="fa-brands fa-linkedin-in"></i></button>
+        <button><i class="fa-brands fa-twitter"></i></button>
+        <button><i class="fa-brands fa-github"></i></button>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/aa511fbd04.js" crossorigin defer></script>
+<script src="./index.98340f7d.js" defer type="module"></script>
+<script src="./index.aa907894.js" defer></script>
+<script>let t = document.querySelector("#unsplashImage");
+fetch("https://api.unsplash.com/photos/random/?client_id=HcseiKk68uY8A-0GtscrTpb1vQxcv_msTNOxJiON6Fs&query=motivationDark  successDark inspiration").then(function (t) {
+    return t.json()
+}).then(function (s) {
+    t.setAttribute("src", `${s.urls.regular}`)
+});</script>
+</body>
+</html>

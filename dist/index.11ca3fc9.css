@@ -1,0 +1,570 @@
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    transition: background-color 1s, color .3s
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+body {
+    background: var(--bodyBackgroundColor);
+    position: relative
+}
+
+.island-moments-regular {
+    font-family: Island Moments, cursive;
+    font-style: normal;
+    font-weight: 400
+}
+
+.abhaya-libre-regular {
+    font-family: Abhaya Libre, serif;
+    font-style: normal;
+    font-weight: 400
+}
+
+.abhaya-libre-medium {
+    font-family: Abhaya Libre, serif;
+    font-style: normal;
+    font-weight: 500
+}
+
+.abhaya-libre-semibold {
+    font-family: Abhaya Libre, serif;
+    font-style: normal;
+    font-weight: 600
+}
+
+.abhaya-libre-bold {
+    font-family: Abhaya Libre, serif;
+    font-style: normal;
+    font-weight: 700
+}
+
+.abhaya-libre-extrabold {
+    font-family: Abhaya Libre, serif;
+    font-style: normal;
+    font-weight: 800
+}
+
+.inter-completeAndPendingTasks {
+    font-optical-sizing: auto;
+    text-align: center;
+    color: var(--mainTextColor);
+    border-radius: 10px;
+    width: 48%;
+    padding: 18px 0;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900
+}
+
+header {
+    background-color: var(--headerandFooterColor);
+    color: var(--mainTextColor);
+    padding: 1rem 3rem;
+    box-shadow: 0 4px 12px #0003
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex
+}
+
+nav > div {
+    align-items: center;
+    gap: 1rem;
+    display: flex
+}
+
+nav img {
+    width: 4rem;
+    height: 4rem
+}
+
+nav div {
+    letter-spacing: 2px;
+    font-family: Island Moments, cursive;
+    font-size: 50px
+}
+
+nav > div div, footer > div:first-child div {
+    background-color: var(--logoColor);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    display: flex;
+    box-shadow: -10px -5px #f8777780
+}
+
+nav > div div {
+    width: 50px;
+    height: 50px;
+    font-size: 30px
+}
+
+footer {
+    background-color: var(--headerandFooterColor);
+    color: var(--mainTextColor);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 1rem 3rem;
+    display: flex
+}
+
+footer > div:first-child div {
+    width: 30px;
+    height: 30px;
+    font-size: 15px
+}
+
+footer > div:first-child {
+    gap: 1rem;
+    font-family: Island Moments, cursive;
+    font-size: 30px;
+    display: flex
+}
+
+.copyright {
+    font-size: 20px
+}
+
+.socialIcons {
+    gap: 1rem;
+    display: flex
+}
+
+.socialIcons button {
+    background-color: #0000;
+    border: 1px solid #92929c;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    display: flex
+}
+
+h1 {
+    text-align: center;
+    color: var(--mainTextColor);
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 500
+}
+
+i {
+    color: var(--mainTextColor)
+}
+
+section {
+    background-color: var(--bodyBackgroundColor);
+    border-radius: 10px;
+    grid-template-columns:1fr 2fr;
+    gap: 1rem;
+    margin: 3rem;
+    padding: 3rem 5rem;
+    display: grid
+}
+
+section > div {
+    flex-direction: column;
+    align-items: center;
+    display: flex
+}
+
+.tasksContainer {
+    grid-template-columns:repeat(auto-fit, minmax(265px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    overflow: scroll
+}
+
+.taskCard {
+    background-color: var(--CardColor);
+    color: var(--mainTextColor);
+    border-radius: 10px;
+    justify-content: space-between;
+    gap: 5rem;
+    max-height: 130px;
+    padding: 1rem;
+    display: flex
+}
+
+.taskIcons {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
+    display: flex
+}
+
+.taskTitle {
+    padding-bottom: .5rem;
+    font-size: 25px
+}
+
+.taskDescription {
+    color: #5c5c57e6;
+    padding-bottom: 1.5rem;
+    font-size: small
+}
+
+i {
+    font-size: large
+}
+
+section > div button {
+    border: 1px solid #f2b258;
+    padding: .5rem 1.5rem;
+    font-size: large;
+    font-weight: 700
+}
+
+section > div {
+    gap: 1rem
+}
+
+.tasksCreated {
+    background-color: var(--CardColor);
+    color: var(--mainTextColor);
+    text-align: center;
+    border-radius: 13px;
+    width: 100%;
+    padding: 1.5rem 0;
+    box-shadow: 0 20px 25px -5px #0000001a, 0 10px 10px -5px #0000000a
+}
+
+.tasksCreated h2 {
+    font-size: 3rem
+}
+
+.tasksCreated h3 {
+    color: var(--logoColor)
+}
+
+input.form-control.input {
+    color: var(--mainTextColor);
+    background: 0 0;
+    border: none;
+    outline: none;
+    width: 308px;
+    font-family: Abhaya Libre, serif;
+    font-size: xx-large;
+    font-weight: 600
+}
+
+.flatpickr-month {
+    padding-bottom: 1rem
+}
+
+.flatpickr-current-month select.flatpickr-monthDropdown-months {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: ""
+}
+
+.flatpickr-prev-month, .flatpickr-next-month, .flatpickr-current-month .numInputWrapper {
+    display: none
+}
+
+.flatpickr-day.selected:hover, .flatpickr-day.selected {
+    color: var(--mainTextColor);
+    background: var(--logoColor)
+}
+
+.flatpickr-day {
+    color: var(--mainTextColor);
+    border: none;
+    border-radius: 0
+}
+
+.currentDay {
+    color: var(--logoColor);
+    font-family: Island Moments, cursive;
+    font-size: xxx-large;
+    font-weight: 400
+}
+
+aside > div {
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    display: flex
+}
+
+.completedTaskNumber {
+    background-color: #f0d1a8
+}
+
+.pendingTaskNumber {
+    background-color: var(--pendingTasksNumber)
+}
+
+.addTask {
+    background-color: var(--submitTaskBackgroundColor);
+    border: none;
+    padding: 5px 20px;
+    font-size: 30px
+}
+
+input#title, input#details {
+    background-color: #dbe2ef;
+    border: 1px solid #b1b1b166;
+    border-radius: 2px;
+    padding: 1rem 2rem
+}
+
+input#title::placeholder, input#details::placeholder {
+    color: #7b7b7b
+}
+
+form {
+    gap: 1rem;
+    width: 100%;
+    display: flex
+}
+
+input#details {
+    flex: 1
+}
+
+aside {
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex
+}
+
+.projects button {
+    background-color: #f0d1a8;
+    border: none;
+    border-radius: 2px;
+    padding: .25rem .5rem;
+    font-size: small;
+    font-weight: 400
+}
+
+.projects {
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex
+}
+
+.deleteAll {
+    margin-left: auto
+}
+
+button:hover, input[type=submit]:hover {
+    cursor: pointer
+}
+
+.projects-page {
+    background-color: #f0d1a8;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 50px 25px;
+    display: flex
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through
+}
+
+.modal {
+    border: none;
+    border-radius: 8px;
+    width: 70%;
+    margin-left: -35%;
+    padding: 2rem;
+    position: absolute;
+    left: 50%
+}
+
+.modal::backdrop {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: #c4a49f80
+}
+
+.modal form input[type=submit] {
+    color: #fff;
+    cursor: pointer;
+    background-color: #866b67;
+    border: none;
+    border-radius: 4px;
+    width: 80%;
+    padding: 10px 20px
+}
+
+.form-group input[type=text], .form-group input[type=date] {
+    border: 1px solid #c4a49f40;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px
+}
+
+.modal form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex
+}
+
+label {
+    font-weight: 700;
+    display: block
+}
+
+.form-group {
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex
+}
+
+.swal2-html-container input.swal2-input {
+    margin: 1em 0
+}
+
+input.swal2-input {
+    width: 100%
+}
+
+input.swal2-input:focus {
+    outline-color: #c4a49f
+}
+
+.swal2-actions {
+    width: 100%;
+    padding: 1em 1.6em .3em;
+    display: flex
+}
+
+.swal2-actions .swal2-confirm {
+    background-color: #c4a49f;
+    width: 100%
+}
+
+button.swal2-cancel.swal2-styled {
+    width: 100%
+}
+
+div.swal2-container.swal2-center.swal2-backdrop-show {
+    padding: 0
+}
+
+div:where(.swal2-container).swal2-center > .swal2-popup {
+    width: 100%
+}
+
+div.swal2-popup.swal2-modal.swal2-show {
+    position: absolute;
+    bottom: 0
+}
+
+.nightMode {
+    background: 0 0;
+    border: 1px solid #92929c;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 1rem;
+    right: 2px
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+}
+
+.fall-in {
+    animation: .5s forwards fall
+}
+
+.fade-out {
+    animation: .5s forwards fadeOut
+}
+
+.flatpickr-calendar.hasTime.animate.inline {
+    background: var(--CardColor)
+}
+
+.flatpickr-day.nextMonthDay {
+    color: #d3d3d3
+}
+
+span.flatpickr-weekday, .flatpickr-current-month select.flatpickr-monthDropdown-months, .flatpickr-time input, .flatpickr-time .flatpickr-am-pm {
+    color: var(--mainTextColor)
+}
+
+.fa-moon {
+    font-size: x-large
+}
+
+#datepicker {
+    width: 100%;
+    padding: 1rem
+}
+
+.motivation {
+    max-height: 300px;
+    position: relative
+}
+
+.quotes {
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 1.5em;
+    font-family: Abhaya Libre, serif;
+    font-size: large;
+    font-weight: 900;
+    line-height: 2;
+    position: absolute
+}
+
+#unsplashImage {
+    filter: brightness(.5);
+    width: 100%;
+    height: 100%
+}
+
+.flatpickr-calendar.inline {
+    background: var(--CardColor)
+}
+
+/*# sourceMappingURL=index.11ca3fc9.css.map */
