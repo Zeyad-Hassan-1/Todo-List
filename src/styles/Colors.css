@@ -1,0 +1,19 @@
+:root {
+    --headerandFooterColor: rgba(242, 234, 234, 1);
+    --bodyBackgroundColor: #FFFFFF;
+    --CardColor: rgba(240, 209, 168, 1);
+    --submitTaskBackgroundColor: #5C9967;
+    --mainTextColor: black;
+    --pendingTasksNumber: #C4A49F;
+    --logoColor: #F87777;
+}
+
+
+
+/*
+
+bodyDark : #1e1e1e
+472525
+
+sidebar :#262626
+*/

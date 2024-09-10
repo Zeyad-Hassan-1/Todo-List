@@ -1,0 +1,111 @@
+@media only screen and (max-width: 425px){
+
+    .quotes{
+        font-size: 15px;
+        line-height: 1;
+        padding: 1em;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-weight: bold;
+    }
+
+    input.form-control.input,.flatpickr-calendar.inline{
+        display: none;
+    }
+
+    .tasksContainer{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .projectCard h3 {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .projects-page{
+        padding: 2rem 1rem;
+    }
+    .tasksContainer{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    h3{
+        font-size: larger;
+    }
+
+    .taskForm{
+        flex-wrap: wrap;
+    }
+
+    .taskForm input{
+        width: 100%;
+    }
+
+    section{
+        padding: 3rem 1rem;
+        margin: 1rem;
+    }
+
+    header{
+        padding: 1rem 1rem;
+    }
+
+    nav div{
+        font-size: large;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .inter-completeAndPendingTasks{
+        font-size: 1rem;
+    }
+
+    .copyright {
+        font-size: medium;
+    }
+
+    footer > div:nth-child(1){
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    aside{
+        width: 100%;
+        align-items: center;
+        gap: 3rem;
+    }
+    section > div{
+        width: 100%;
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    #unsplashImage{
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1080px) {
+    section {
+        margin: 3rem;
+        padding: 3rem 1rem;
+    }
+}

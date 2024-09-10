@@ -1,0 +1,607 @@
+* {
+    padding: 0;
+    margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: Roboto, sans-serif;
+    transition: background-color 1s ,color   0.3s;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    background: var(--bodyBackgroundColor);
+    position: relative;
+}
+
+.island-moments-regular {
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.abhaya-libre-regular {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.abhaya-libre-medium {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.abhaya-libre-semibold {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.abhaya-libre-bold {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.abhaya-libre-extrabold {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.inter-completeAndPendingTasks {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+    padding: 18px 0;
+    text-align: center;
+    border-radius: 10px;
+    width: 48%;
+    color: var(--mainTextColor);
+}
+
+
+header {
+    background-color: var(--headerandFooterColor);
+    color: var(--mainTextColor);
+    padding: 1rem 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav img {
+    width: 4rem;
+    height: 4rem;
+}
+
+nav div {
+    font-size: 50px;
+    font-family: Island Moments, cursive;
+    letter-spacing: 2px;
+}
+
+nav > div div, footer > div:nth-child(1) div {
+    border-radius: 50%;
+    background-color: var(--logoColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: -10px -5px 0 rgb(248 119 119 / 50%);
+}
+
+nav > div div {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+
+/* Footer styles */
+
+footer {
+    margin-top: 5rem;
+    background-color: var(--headerandFooterColor);
+    color: var(--mainTextColor);
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div:nth-child(1) div {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+footer > div:nth-child(1) {
+    font-family: "Island Moments", cursive;
+    display: flex;
+    gap: 1rem;
+    font-size: 30px;
+}
+
+.copyright {
+    font-size: 20px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialIcons button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #92929C;
+    background-color: transparent;
+}
+
+/*   styling the section and the  welcome msg*/
+
+h1 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--mainTextColor);
+}
+
+i{
+    color: var(--mainTextColor);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 3rem 5rem;
+    margin: 3rem;
+    background-color: var(--bodyBackgroundColor);
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasksContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    gap: 1.5rem;
+    height: 300px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.taskCard {
+    background-color: var(--CardColor);
+    color: var(--mainTextColor);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 1rem;
+    max-height: 130px;
+}
+
+.taskIcons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.taskTitle {
+    padding-bottom: 0.5rem;
+    font-size: 25px;
+}
+
+.taskDescription {
+    padding-bottom: 1.5rem;
+    font-size: small;
+    color: rgba(92, 92, 87, 0.9);
+}
+
+i {
+    font-size: large;
+}
+
+section > div button {
+    border: 1px solid #F2B258;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    font-size: large;
+}
+
+section > div {
+    gap: 1rem;
+}
+
+.tasksCreated {
+    background-color: var(--CardColor);
+    color: var(--mainTextColor);
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+}
+
+.tasksCreated h2 {
+    font-size: 3rem;
+}
+
+.tasksCreated h3 {
+    color: var(--logoColor);
+}
+
+input.form-control.input {
+    border: none;
+    outline: none;
+    width: 308px;
+    background: transparent;
+    font-size: xx-large;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    color: var(--mainTextColor);
+}
+
+
+.flatpickr-month {
+    padding-bottom: 1rem;
+}
+
+.flatpickr-current-month select.flatpickr-monthDropdown-months {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.flatpickr-prev-month {
+    display: none;
+
+}
+
+.flatpickr-next-month {
+    display: none;
+}
+
+.flatpickr-current-month .numInputWrapper {
+    display: none;
+}
+
+.flatpickr-day.selected:hover {
+    color: var(--mainTextColor);
+    background: var(--logoColor);
+}
+
+.flatpickr-day.selected {
+    color: var(--mainTextColor);
+    background: var(--logoColor);
+}
+
+.flatpickr-day {
+    border-radius: 0;
+    border: none;
+    color: var(--mainTextColor);
+}
+
+.currentDay {
+    font-family: "Island Moments", cursive;
+    font-size: xxx-large;
+    color: var(--logoColor);
+    font-weight: normal;
+}
+
+aside > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex: 1;
+    align-items: flex-end;
+}
+
+.completedTaskNumber {
+    background-color: #F0D1A8;
+}
+
+.pendingTaskNumber {
+    background-color: var(--pendingTasksNumber);
+}
+
+.addTask {
+    background-color: var(--submitTaskBackgroundColor);
+    padding: 5px 20px;
+    border: none;
+    font-size: 30px;
+}
+
+input#title, input#details {
+    background-color: #DBE2EF;
+    border-radius: 2px;
+    border: 1px solid rgba(177, 177, 177, 0.4);
+    padding: 1rem 2rem;
+}
+
+input#title::placeholder, input#details::placeholder {
+    color: #7B7B7B;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    gap: 1rem;
+}
+
+input#details {
+    flex: 1;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects button {
+    background-color: #F0D1A8;
+    padding: .25rem 0.5rem;
+    border-radius: 2px;
+    border: none;
+    font-size: small;
+    font-weight: normal;
+}
+
+.projects {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.deleteAll {
+    margin-left: auto;
+}
+
+button:hover, input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.projects-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 50px 25px;
+    background-color: rgba(240, 209, 168, 1);
+}
+
+.completed{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.modal {
+    border: none;
+    border-radius: 8px;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    margin-left: -35%;
+    padding: 2rem;
+}
+
+.modal::backdrop {
+    background-color: rgb(196 164 159 / 50%);
+    backdrop-filter: blur(3px);
+}
+
+.modal form input[type = "submit"] {
+    padding: 10px 20px;
+    background-color: rgb(134 107 103);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    padding: 8px;
+    border: 1px solid rgb(196 164 159 / 25%);
+    border-radius: 4px;
+    outline: none;
+}
+
+
+.modal form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.swal2-html-container input.swal2-input {
+    margin: 1em 0;
+}
+
+input.swal2-input {
+    width: 100%;
+}
+
+input.swal2-input:focus {
+    outline-color: #C4A49F;
+}
+
+.swal2-actions{
+    display: flex;
+    width: 100%;
+    padding: 1em 1.6em .3em;
+}
+
+.swal2-actions .swal2-confirm {
+    width: 100%;
+    background-color: #C4A49F;
+}
+
+button.swal2-cancel.swal2-styled{
+    width: 100%;
+}
+
+div.swal2-container.swal2-center.swal2-backdrop-show{
+    padding: 0;
+}
+
+div:where(.swal2-container).swal2-center>.swal2-popup {
+    width: 100%;
+}
+
+div.swal2-popup.swal2-modal.swal2-show{
+    position: absolute;
+    bottom: 0;
+}
+
+.nightMode{
+    position: fixed;
+    bottom: 1rem;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid #92929C;
+}
+
+/* Animation for falling icon */
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for fading out icon */
+@keyframes fadeOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+/* Add class to animate the icon */
+.fall-in {
+    animation: fall 0.5s ease forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+
+.flatpickr-calendar.hasTime.animate.inline{
+    background : var(--CardColor);
+}
+
+.flatpickr-day.nextMonthDay{
+    color: lightgray;
+}
+
+span.flatpickr-weekday{
+    color: var(--mainTextColor);
+}
+
+.flatpickr-current-month select.flatpickr-monthDropdown-months {
+    color: var(--mainTextColor);
+}
+
+.flatpickr-time input{
+    color: var(--mainTextColor);
+}
+
+.flatpickr-time .flatpickr-am-pm{
+    color: var(--mainTextColor);
+}
+
+.fa-moon{
+    font-size: x-large;
+}
+
+#datepicker{
+    width: 100%;
+    padding: 1rem;
+}
+
+.motivation{
+    position: relative;
+    max-height: 300px
+}
+
+.quotes{
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 2;
+    padding: 1.5em;
+    font-family: Abhaya Libre, serif;
+    font-size: large;
+    font-weight: 900;
+    position: absolute;
+}
+
+#unsplashImage{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+}
+
+.flatpickr-calendar.inline{
+    background: var(--CardColor);
+}
